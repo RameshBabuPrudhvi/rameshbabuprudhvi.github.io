@@ -33,6 +33,11 @@ sidebar:
       item: Testing / Programming
       link: https://github.com/rameshbabuprudhvi
 
+  certifications:
+    - certification:
+      name: Certified Scrum Master®
+      link: http://bcert.me/seknihmkt
+      validity: Mar 10, 2019 - Mar 10, 2021
 
 career-profile:
   title: Career Profile
@@ -74,11 +79,6 @@ experiences:
   - role: Senior Analyst
     time: Oct 2011 - Feb 2013
     company: Coromandel Infotech India Ltd.
-
-certifications:
-    name: Certified Scrum Master®
-    link: http://bcert.me/seknihmkt
-    validity: Mar 10, 2019 - Mar 10, 2021
 
 projects:
   title: Projects
