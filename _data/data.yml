@@ -57,9 +57,13 @@ education:
   - degree: M.Tech in Computer Science &amp; Engineering
     university: Sri Venkateswara College of Engineering and Technology, JNTU, Anatapur
     time: 2009 - 2011
-    details: |
-      Test.
-      
+    details: m
+    
+  - degree: B.Tech in Computer Science &amp; Engineering
+    university: Sri Venkateswara College of Engineering and Technology, JNTU, Anatapur
+    time: 2009 - 2011
+    details: b
+    
 experiences:
   - role: Senior QA Lead / Automation Architect
     time: Nov 2016 – Present
