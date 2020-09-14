@@ -1,13 +1,10 @@
-{% assign education = site.data.data.certifications %}
-{% if education %}
-{% if site.data.data.certifications %}
+{% assign certification = site.data.data.certifications %}
+{% if certification %}
 <div class="education-container container-block">
 
-    <h2 class="container-block-title">
-        Education
-    </h2>
+    <h2 class="container-block-title">Certifications</h2>
 
-    {% for graduation in education %}
+    {% for graduation in certification %}
     <div class="item">
         <h3 class="degree"><img width="25" height="25" src="{{site.baseurl}}/assets/images/csm.png" >
             <a href="{{ certification.link }}" target="_blank">{{ certification.name }}</a></h3>
@@ -16,5 +13,4 @@
     {% endfor %}
 
 </div><!--//education-container-->
-
 {% endif %}
