@@ -58,7 +58,11 @@ education:
     time: 2002 - 2006
     details: |
       Test.
-
+- degree: M.Tech in Computer Science &amp; Engineering
+    university: Sri Venkateswara College of Engineering and Technology
+    time: 2009 - 2011
+    details: |
+      Test.
       
 experiences:
   - role: Senior QA Lead / Automation Architect
