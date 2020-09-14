@@ -1,0 +1,143 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+  about: False # set to False or comment line if you want to remove the "How to use?" in the sidebar
+  education: True # set to False if you want education in main section instead of in sidebar
+
+  # Profile information
+  name: Ramesh Babu Prudhvi
+  tagline: Automation Architect
+  avatar: profile.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+  # Sidebar links
+  email: rameshbabu.p@outlook.com
+  linkedin: rameshbabuprudhvi
+  github: rameshbabuprudhvi
+  facebook: '@rameshbabu.prudhvi' 
+
+  languages:
+    - language:
+      idiom: Telugu
+      level: Native
+    - language:
+      idiom: Tamil
+      level: Native
+    - language:
+      idiom: English
+      level: Advanced
+
+  interests:
+    - interest:
+      item: Testing / Programming
+      link: https://github.com/rameshbabuprudhvi
+
+
+career-profile:
+  title: Career Profile
+  summary:
+    '<div><ul>
+        <li>Have 12+ years of overall work experience with over 10 years of Information Technology & Service Industry experience. Started my career as an Assistant Professor in an engineering college and moved on to IT industry for exploring more on New Technologies.</li>
+        <li>Strong Automation skilled in Selenium , Appium, UFT, Sahi, Cucumber, Katalon Studio, Protractor, JBehave , Cypress, WinAppDriver</li>
+        <li>Strong Experience in Integration for End to End Automation setup using Continuous Integration & Continuous Deployment Pipelines using Jenkins and Teamcity.</li>
+        <li>Excellent hold over extending and customizing TestNG, ReportNG, JUnit</li>
+        <li>Strong experience in developing re-useable automation framework independently, which can be used across teams and projects.</li>
+        <li>Strong experience in Preparing Automation testing metrics and evaluating tools for building Testing Practice</li>
+        <li>Strong experience in Test Planning and Test Estimation ,RTM, writing detailed Test Cases, Results Analysis, Reports, Defect Reporting and Monitoring.</li>
+        <li>Have experience in the Data Analysis and Testing of Data Warehousing using Data Validation, Data Mapping, Data Transformation applying business rules and Data Loading (ETL).</li>
+        <li>Have experience and Knowledge in All Life cycle models and Agile methodologies like SCRUM framework.</li>
+        <li>Have experience in interacting with client calls on regular basis for change request/enhancements.</li>
+        <li>Hands on experience in Business Process Automation using Robotic Process Automation (RPA).</li>
+        <li>Capable to quickly learn New Technologies and adapt to a new environment.</li>
+         </ul></div>
+
+education:
+  - degree: MSc in System Analysis and Management
+    university: National Technical University "Kharkiv Polytechnic Institute"
+    time: 2002 - 2006
+    details: |
+      For these 6 years we covered: 5 programming languages, 7 mathematics, algorythms theory, optimization methods, system administration, etc.
+
+experiences:
+  - role: Senior QA Lead / Automation Architect
+    time: Nov 2016 – Present
+    company: Computer Enterprises, Inc.
+  - role: Lead Testing Practice
+    time: Jan 2013 - Oct 2016
+    company: Saviance Technologies
+  - role: Senior Analyst
+    time: Oct 2011 - Feb 2013
+    company: Coromandel Infotech India Ltd.
+
+
+projects:
+  title: Projects
+  intro: >
+    Here you can find a list of open source and commercial projects I've been working on for the past 5 years. Please note that commercial projects names are not real due to NDA.
+
+  assignments:
+    - title: Smart Assistant
+      link: "#"
+      tagline: 'Voice assistant / chatbot, managed by different Google services.
+                  <div><br><u>Role</u>: Backend Developer, Tech Lead.</div>
+                  <div><u>Stack</u>:</div>
+                  <div><ul>
+                    <li>BE: Typescript, NestJS/Typeorm, Jest, Python, Flask, ML (numpy, scikit-learn, NLTK, FastText, Annoy)</li>
+                    <li>FE: ReactJS, MobX, Jest</li>
+                    <li>Google Cloud: STT/TTS, SQL Cloud, Datastore, Kubernetes Engine</li>
+                    <li>Test Automation: Mocha, Chai, WebdriverIO, AllureJS, Selenoid, Docker</li>
+                    <li>CI/CD: GitHub + Azure Pipelines</li></ul></div>'
+   
+
+skills:
+  title: Skills &amp; Proficiency
+  toolset:
+    - name: Software Testing / Quality Assurance
+      level: 90%
+
+    - name: Test Automation
+      level: 90%   
+
+    - name: Selenium / TestNG / JUnit / Cucumber
+      level: 95%
+
+    - name: Mocha / WebDriverIO
+      level: 40%
+
+    - name: Appium
+      level: 70%
+
+    - name: JMeter 
+      level: 50%
+
+    - name: Java / OOP / Design Patterns
+      level: 85%
+
+    - name: Javascript / Typescript
+      level: 60%
+
+    - name: Python /Ruby Script
+      level: 35%
+
+    - name: Maven
+      level: 90%
+
+    - name: MySQL 
+      level: 70%
+
+    - name: Git
+      level: 90%
+
+    - name: Jenkins /Team City
+      level: 90%
+
+    - name: Docker
+      level: 75%
+
+    - name: AWS / Google services
+      level: 65%
+
+
+footer: >
+  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
