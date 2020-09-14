@@ -1,10 +1,10 @@
-{% assign certification = site.data.data.certifications %}
+{% assign certifications = site.data.data.certifications %}
 {% if certification %}
 <div class="education-container container-block">
 
     <h2 class="container-block-title">Certifications</h2>
 
-    {% for certification in certification %}
+    {% for certification in certifications %}
     <div class="item">
         <h3 class="degree"><img width="25" height="25" src="{{site.baseurl}}/assets/images/csm.png" >
             <a href="{{ certification.link }}" target="_blank">{{ certification.name }}</a></h3>
