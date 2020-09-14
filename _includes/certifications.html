@@ -6,8 +6,8 @@
 
     {% for certification in certifications %}
     <div class="item">
-        <h3 class="degree"><img width="25" height="25" src="{{site.baseurl}}/assets/images/csm.png" >
-            <a href="{{ certification.link }}" target="_blank">{{ certification.name }}</a></h3>
+        <h5 class="degree"><img width="25" height="25" src="{{site.baseurl}}/assets/images/csm.png" >
+            <a href="{{ certification.link }}" target="_blank">{{ certification.name }}</a></h5>
         <div class="time">{{ certification.validity }}</div>
     </div><!--//item-->
     {% endfor %}
