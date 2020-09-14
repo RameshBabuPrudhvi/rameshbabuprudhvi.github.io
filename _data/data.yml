@@ -101,7 +101,7 @@ skills:
     - name: Test Automation
       level: 90%   
 
-    - name: Selenium / TestNG / JUnit / Cucumber
+    - name: Selenium / TestNG / JUnit / Cucumber / Katalon Studio
       level: 95%
 
     - name: Mocha / WebDriverIO
@@ -110,7 +110,10 @@ skills:
     - name: Appium
       level: 70%
 
-    - name: JMeter 
+    - name: Protractor / Cypress 
+      level: 40%
+      
+    - name: JMeter / RestAssured
       level: 50%
 
     - name: Java / OOP / Design Patterns
@@ -128,7 +131,7 @@ skills:
     - name: MySQL 
       level: 70%
 
-    - name: Git
+    - name: Git /SVN
       level: 90%
 
     - name: Jenkins /Team City
@@ -137,7 +140,7 @@ skills:
     - name: Docker
       level: 75%
 
-    - name: AWS / Google services
+    - name: AWS / Google Services
       level: 65%
 
 
