@@ -76,7 +76,7 @@ experiences:
     company: Coromandel Infotech India Ltd.
 
 certifications:
-    name: Certified Scrum Master®
+  - name: Certified Scrum Master®
     link: http://bcert.me/seknihmkt
     validity: Mar 10, 2019 - Mar 10, 2021
 
