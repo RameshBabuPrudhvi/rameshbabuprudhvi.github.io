@@ -53,12 +53,12 @@ career-profile:
          </ul></div>'
 
 education:
-  - degree: B.Tech in Computer Science & Information Technology
+  - degree: B.Tech in Computer Science &amp; Information Technology
     university: Gokula Krishna College of Engineering, JNTU, Hyderabad
     time: 2002 - 2006
     details: |
       Test.
- - degree: M.Tech in Computer Science & Engineering
+ - degree: M.Tech in Computer Science &amp; Engineering
     university: Sri Venkateswara College of Engineering and Technology, JNTU, Anatapur
     time: 2009 - 2011
     details: |
