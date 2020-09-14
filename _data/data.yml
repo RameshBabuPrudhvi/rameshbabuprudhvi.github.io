@@ -50,14 +50,14 @@ career-profile:
         <li>Have experience in interacting with client calls on regular basis for change request/enhancements.</li>
         <li>Hands on experience in Business Process Automation using Robotic Process Automation (RPA).</li>
         <li>Capable to quickly learn New Technologies and adapt to a new environment.</li>
-         </ul></div>
+         </ul></div>'
 
 education:
-  - degree: MSc in System Analysis and Management
-    university: National Technical University "Kharkiv Polytechnic Institute"
+  - degree: B.Tech
+    university: JNTU
     time: 2002 - 2006
     details: |
-      For these 6 years we covered: 5 programming languages, 7 mathematics, algorythms theory, optimization methods, system administration, etc.
+      Test.
 
 experiences:
   - role: Senior QA Lead / Automation Architect
