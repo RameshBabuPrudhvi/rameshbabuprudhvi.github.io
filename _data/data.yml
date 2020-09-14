@@ -78,18 +78,15 @@ projects:
     Here you can find a list of open source and commercial projects I've been working on for the past 5 years. Please note that commercial projects names are not real due to NDA.
 
   assignments:
-    - title: Smart Assistant
+    - title: Banking Product
       link: "#"
-      tagline: 'Voice assistant / chatbot, managed by different Google services.
-                  <div><br><u>Role</u>: Backend Developer, Tech Lead.</div>
+      tagline: 'Loan Application.
+                  <div><br><u>Role</u>: Automation Architect</div>
                   <div><u>Stack</u>:</div>
                   <div><ul>
-                    <li>BE: Typescript, NestJS/Typeorm, Jest, Python, Flask, ML (numpy, scikit-learn, NLTK, FastText, Annoy)</li>
-                    <li>FE: ReactJS, MobX, Jest</li>
-                    <li>Google Cloud: STT/TTS, SQL Cloud, Datastore, Kubernetes Engine</li>
-                    <li>Test Automation: Mocha, Chai, WebdriverIO, AllureJS, Selenoid, Docker</li>
-                    <li>CI/CD: GitHub + Azure Pipelines</li></ul></div>'
-   
+                    <li>Java, Maven, Selenium WebDriver/Grid, TestNG, Cucumber, Postman</li>
+                    <li>CI/CD: GitHub + Azure Pipelines </li>
+                  </ul></div>'   
 
 skills:
   title: Skills &amp; Proficiency
