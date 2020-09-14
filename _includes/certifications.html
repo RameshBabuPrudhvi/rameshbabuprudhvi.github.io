@@ -1,14 +1,55 @@
-{% if site.data.certifications %}
-<div class="education-container container-block">
+{% assign certifications = site.data.data.certifications %}
+{% if certifications %}
+{% if site.data.data.sidebar.certifications %}
+<div class="educations-container container-block">
 
-    <h2 class="container-block-title">Certifications</h2>
+    <h2 class="container-block-title">
+        certifications
+    </h2>
 
-    {% for certification in site.data.certifications %}
+    {% for graduation in certifications %}
     <div class="item">
-        <h5 class="degree"><img width="25" height="25" src="{{site.baseurl}}/assets/images/csm.png" ><a href="{{ certification.link }}" target="_blank">{{ certification.name }}</a></h5>
-            <div class="time">{{ certification.validity }}</div>
+        <h5 class="degree"><img width="25" height="25" src="{{site.baseurl}}/assets/images/csm.png" >
+            <a href="{{ certifications.link }}" target="_blank">{{ certifications.name }}</a>
+        </h5>
+        <div class="time">{{ certifications.validity }}</div>
     </div><!--//item-->
     {% endfor %}
 
-</div><!--//education-container-->
+</div><!--//certifications-container-->
+{% else %}
+<section class="section educations-section">
+
+    <h2 class="section-title">
+      <span class="fa-stack fa-xs">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
+      </span>
+        certifications
+    </h2>
+
+    {% for graduation in certifications %}
+    <div class="item">
+
+        <div class="meta">
+
+            <div class="upper-row">
+                <h3 class="degree">{{ graduation.degree }}</h3>
+                <div class="time">{{ graduation.time }}</div>
+            </div><!--//upper-row-->
+
+            <div class="university">{{ graduation.university }}</div>
+        </div><!--//meta-->
+
+        {% if graduation.details %}
+        <div class="details">
+            {{ graduation.details | markdownify }}
+        </div><!--//details-->
+        {% endif %}
+
+    </div><!--//item-->
+    {% endfor %}
+
+</section><!--//section-->
+{% endif %}
 {% endif %}
