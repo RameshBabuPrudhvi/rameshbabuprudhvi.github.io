@@ -12,6 +12,9 @@ refer to its [documentation](https://maven.apache.org/guides/getting-started/mav
 
 ## Usage
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 <Tabs defaultValue="java"
 values={[
 {label: 'MobileTest.java', value: 'java'}, {label: 'pom.xml', value: 'pom'}
