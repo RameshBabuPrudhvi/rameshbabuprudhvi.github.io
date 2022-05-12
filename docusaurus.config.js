@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Ramesh Babu Prudhvi',
+  tagline: 'Automation Architect',
   url: 'https://rameshbabuprudhvi.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -34,17 +34,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/RameshBabuPrudhvi/rameshbabuprudhvi.github.io',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -59,7 +53,7 @@ const config = {
       navbar: {
         title: 'Ramesh Babu Prudhvi',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Ramesh Babu Prudhvi',
           src: 'img/logo.svg',
         },
         items: [
@@ -67,7 +61,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Selcukes',
+            label: 'Docs',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -84,7 +78,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Projects',
+                label: 'Getting started',
                 to: '/docs/intro',
               },
               {
@@ -120,7 +114,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()}.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Ramesh Babu Prudhvi`,
       },
       prism: {
         theme: lightCodeTheme,
