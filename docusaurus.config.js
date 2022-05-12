@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Ramesh Babu Prudhvi',
-  tagline: 'Automation Architect',
+  tagline: 'Open source contributor | Mentor | Automation Architect',
   url: 'https://rameshbabuprudhvi.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
