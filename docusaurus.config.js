@@ -13,15 +13,8 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'rameshbabuprudhvi', // Usually your GitHub org/user name.
-  projectName: 'rameshbabuprudhvi.github.io', // Usually your repo name.
-
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
+  organizationName: 'rameshbabuprudhvi',
+  projectName: 'rameshbabuprudhvi.github.io',
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -43,6 +36,10 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+         sitemap: {
+           changefreq: 'weekly',
+           priority: 0.5,
+        },
       }),
     ],
   ],
@@ -50,6 +47,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+       id: 'star-the-repo',
+       content:
+         '⭐ Don\'t forget to Star the repo on 👉 <a target="_blank" rel="noopener noreferrer" href="https://github.com/selcukes/selcukes-java">GitHub</a> ⭐',
+         backgroundColor: '#ffb600',
+         textColor: '#000000',
+         isCloseable: false,
+      },
       navbar: {
         title: 'Ramesh Babu Prudhvi',
         logo: {
@@ -114,11 +119,12 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Ramesh Babu Prudhvi`,
+        copyright: `Copyright © ${new Date().getFullYear()} Ramesh Babu Prudhvi. All rights reserved.`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['java', 'json'],
       },
     }),
 };
