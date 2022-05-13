@@ -4,32 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
+    title: 'Open Source',
+    Svg: require('@site/static/img/icon-open_source.svg').default,
+    description: (
+      <>
+        As an open source company, we're passionately engaged in numerous projects, initiatives and standards where we represent the needs and requirements of our many customers and partners
+      </>
+    ),
+  },
+  {
     title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/icon_easy_to_use.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        All features that we provide- use the same syntax. Once you learn how to write tests for the web, you can start immediately writing for mobile, desktop, or REST
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Test Everything',
+    Svg: require('@site/static/img/icon_android_chrome.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Web, including responsive, iOS, Android, Desktop, and REST services.
       </>
     ),
   },
