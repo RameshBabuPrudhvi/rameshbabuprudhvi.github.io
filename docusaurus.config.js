@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Hello! I am Ramesh Babu',
-  tagline: 'Open source contributor | Mentor | Automation Architect',
+  title: 'Ramesh Babu',
+  tagline: 'I am committed to helping you learn Automation development in the most intuitive and fastest way, and I hope my personal experience can inspire you.',
   url: 'https://rameshbabuprudhvi.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
