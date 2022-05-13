@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Ramesh Babu Prudhvi',
+  title: 'Hello! I am Ramesh Babu',
   tagline: 'Open source contributor | Mentor | Automation Architect',
   url: 'https://rameshbabuprudhvi.github.io',
   baseUrl: '/',
@@ -31,7 +31,7 @@ const config = {
         blog: {
           showReadingTime: true,
           editUrl:
-            'https://github.com/RameshBabuPrudhvi/rameshbabuprudhvi.github.io',
+            'https://github.com/RameshBabuPrudhvi/rameshbabuprudhvi.github.io/blog/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -71,7 +71,8 @@ const config = {
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/RameshBabuPrudhvi',
-            label: 'GitHub',
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
             position: 'right',
           },
         ],
@@ -119,7 +120,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Ramesh Babu Prudhvi. All rights reserved.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Ramesh Babu Prudhvi. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
