@@ -4,30 +4,23 @@
  */
 
 .heroBanner {
-  padding: 0 0 var(--ifm-navbar-height);
+  padding: 4rem 0;
   text-align: left;
   position: relative;
   overflow: hidden;
-  background: url('/img/programmer.svg') right 0px/50% auto no-repeat;
-  height: calc(100vh - calc(2 * var(--ifm-navbar-height)));
-}
-
-.hero__title {
-  font-size: 2.5rem;
-}
-
-.hero__subtitle {
-  text-align: right;
-  font-weight: 200;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
   }
-  .hero_title {
-      font-size: 1.8rem;
-      text-align: right;
-  }
 }
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 

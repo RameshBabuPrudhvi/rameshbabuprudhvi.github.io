@@ -13,8 +13,9 @@ function HomepageHeader() {
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">
-        <span style={{ color: 'var(--ifm-color-primary)' }}>Hello! I am </span>{siteConfig.title}</h1>
-        <div style={{width:'50%'}}><p className="hero__subtitle">{siteConfig.tagline}</p></div>
+       <span style={{ color: 'var(--ifm-color-primary)' }}>Hello! I am </span>{siteConfig.title}</h1>
+       <p className="hero__subtitle"> <span>Being lazy by nature, I tend to automate everything which I need to do manually. This thinking keeps me motivated to learn new testing tools, new technologies and best practices. I keep challenging myself to push my limits and move out of my comfort zone and upgrade my skills.</span>
+                                             <br/>{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
@@ -22,6 +23,10 @@ function HomepageHeader() {
             Get Started with Selcukes Java
           </Link>
         </div>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      </div>
+      <div className="container">
+        <img src={useBaseUrl("img/programmer.svg")}/>
       </div>
     </header>
   );
