@@ -31,7 +31,7 @@ const config = {
         blog: {
           showReadingTime: true,
           editUrl:
-            'https://github.com/RameshBabuPrudhvi/rameshbabuprudhvi.github.io/blog/main',
+            'https://github.com/RameshBabuPrudhvi/rameshbabuprudhvi.github.io/tree/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
