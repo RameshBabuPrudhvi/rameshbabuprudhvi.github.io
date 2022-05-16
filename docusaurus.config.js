@@ -28,14 +28,14 @@ const config = {
         docs: {
           // sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: "https://rameshbabuprudhvi.github.io/tree/main",
+          editUrl: "https://github.com/RameshBabuPrudhvi/rameshbabuprudhvi.github.io/tree/main",
           breadcrumbs: false,
           sidebarCollapsed: true,
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: "https://rameshbabuprudhvi.github.io/tree/main",
+          editUrl: "https://github.com/RameshBabuPrudhvi/rameshbabuprudhvi.github.io/tree/main",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
