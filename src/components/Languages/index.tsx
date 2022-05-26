@@ -10,34 +10,34 @@ type Item = {
 
 const items: Item[] = [
   {
-    name: "Node.js",
+    name: "Chrome",
     link: "/docs/guides",
-    icon: require("@site/static/languages/nodejs.svg").default,
+    icon: require("@site/static/browsers/chrome.svg").default,
   },
   {
-    name: "Ruby",
+    name: "Firefox",
     link: "/docs/guides",
-    icon: require("@site/static/languages/ruby.svg").default,
+    icon: require("@site/static/browsers/firefox.svg").default,
   },
   {
-    name: "PHP",
+    name: "Edge",
     link: "/docs/guides",
-    icon: require("@site/static/languages/php.svg").default,
+    icon: require("@site/static/browsers/edge.svg").default,
   },
   {
-    name: "Python",
+    name: "IE",
     link: "/docs/guides",
-    icon: require("@site/static/languages/python.svg").default,
+    icon: require("@site/static/browsers/ie.svg").default,
+  },
+  {
+    name: "Android",
+    link: "/docs/guides",
+    icon: require("@site/static/browsers/android.svg").default,
   },
   {
     name: "Java",
     link: "/docs/guides",
     icon: require("@site/static/languages/java.svg").default,
-  },
-  {
-    name: "Go",
-    link: "/docs/guides",
-    icon: require("@site/static/languages/go.svg").default,
   },
 ];
 
@@ -54,7 +54,7 @@ export default function Languages(): JSX.Element {
   return (
     <section className={styles.root}>
       <div className="container">
-        <h2 className={styles.heading}>Supported Languages</h2>
+        <h2 className={styles.heading}>Supported Devices</h2>
         <div className={styles.languages}>
           {items.map((props, idx) => (
             <Language key={idx} {...props} />

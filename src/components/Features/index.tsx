@@ -12,7 +12,7 @@ const items: Item[] = [
   {
     title: "Push to deploy",
     link: "/product/push-to-deploy",
-    icon: require("@site/static/icons/Upload-toCloud.svg").default,
+    icon: require("@site/static/icons/setup.svg").default,
     description: (
       <>
         Push to Github and voila - Easypanel will get your code, build it and

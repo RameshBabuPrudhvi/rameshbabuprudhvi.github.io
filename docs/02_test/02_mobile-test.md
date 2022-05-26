@@ -1,11 +1,11 @@
-# Web Test
+# Mobile Test
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs defaultValue="java"
 values={[
-{label: 'WebTest.java', value: 'java'}, {label: 'pom.xml', value: 'pom'}
+{label: 'MobileTest.java', value: 'java'}, {label: 'pom.xml', value: 'pom'}
 ]
 }>
 
@@ -14,32 +14,47 @@ values={[
 ```java
 package org.example;
 
+import io.appium.java_client.android.Activity;
+import io.appium.java_client.android.AndroidDriver;
 import io.github.selcukes.core.driver.DriverManager;
+import io.github.selcukes.core.driver.GridRunner;
 import io.github.selcukes.core.enums.DeviceType;
-import io.github.selcukes.core.page.WebPage;
+import io.github.selcukes.core.enums.SwipeDirection;
+import io.github.selcukes.core.page.MobilePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import org.testng.annotations.BeforeTest;
 
-public class WebTest {
 
-    @BeforeTest
-    public void beforeSuite() {
-        GridRunner.startSeleniumServer(DriverType.CHROME, DriverType.EDGE);
+public class MobileTest {
+    MobilePage page;
+
+    @BeforeMethod
+    void beforeTest() {
+        GridRunner.startAppiumServer();
+        WebDriver driver = DriverManager.createDriver(DeviceType.MOBILE);
+        page = new MobilePage(driver);
+
     }
 
     @Test
-    public void remoteTest() {
-        WebDriver driver = DriverManager.createDriver(DeviceType.BROWSER);
-        WebPage page = new WebPage(driver);
-        page.open("https://www.google.com/")
-            .assertThat().title("Google");
+    public void expandAndScrollScreenTest() {
+        page.tap("Views")
+                .tap("Expandable Lists")
+                .tap("3. Simple Adapter")
+                .swipe(By.xpath("//android.widget.TextView[@text='Group 18']"), SwipeDirection.DOWN)
+                .tap(By.xpath("//android.widget.TextView[@text='Group 18']"))
+                .swipe(By.xpath("//android.widget.TextView[@text='Child 13']"), SwipeDirection.DOWN)
+                .swipe(By.xpath("//android.widget.TextView[@text='Group 1']"), SwipeDirection.UP);
+
     }
 
-    @AfterTest
-    public void afterTest() {
+    @AfterMethod
+    void afterTest() {
         DriverManager.removeDriver();
+        GridRunner.stopAppiumServer();
     }
 }
 ```
