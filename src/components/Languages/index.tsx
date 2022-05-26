@@ -35,9 +35,9 @@ const items: Item[] = [
     icon: require("@site/static/browsers/android.svg").default,
   },
   {
-    name: "Java",
+    name: "Desktop",
     link: "/docs/guides",
-    icon: require("@site/static/languages/java.svg").default,
+    icon: require("@site/static/browsers/desktop.svg").default,
   },
 ];
 
