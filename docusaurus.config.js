@@ -1,40 +1,29 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
-
 const lightCodeTheme = require("prism-react-renderer/themes/nightOwlLight");
 const darkCodeTheme = require("prism-react-renderer/themes/nightOwl");
 
-/** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Ramesh Babu",
-  tagline: "Manage your server without fighting the terminal",
+  tagline: "One stop automation solution for Web, Desktop, Mobile and API",
   url: "https://rameshbabuprudhvi.github.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "rameshbabuprudhvi", // Usually your GitHub org/user name.
-  projectName: "rameshbabuprudhvi.github.io", // Usually your repo name.
-  stylesheets: [
-    // "https://fonts.googleapis.com/css2?family=Inter:wght@583&display=block",
-    // "https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=block",
-  ],
+  organizationName: "rameshbabuprudhvi",
+  projectName: "rameshbabuprudhvi.github.io",
+  stylesheets: [],
   trailingSlash: false,
   presets: [
     [
       "classic",
-      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          // sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
           editUrl: "https://github.com/RameshBabuPrudhvi/rameshbabuprudhvi.github.io/tree/main",
           breadcrumbs: false,
           sidebarCollapsed: true,
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl: "https://github.com/RameshBabuPrudhvi/rameshbabuprudhvi.github.io/tree/main",
         },
         theme: {
@@ -49,29 +38,9 @@ const config = {
     ],
   ],
 
-  plugins: [
-    // [
-    //   "@docusaurus/plugin-content-docs",
-    //   {
-    //     id: "product",
-    //     path: "product",
-    //     routeBasePath: "product",
-    //     breadcrumbs: false,
-    //   },
-    // ],
-    // [
-    //   "@docusaurus/plugin-content-docs",
-    //   {
-    //     id: "templates",
-    //     path: "templates",
-    //     routeBasePath: "templates",
-    //     breadcrumbs: false,
-    //   },
-    // ],
-  ],
+  plugins: [],
 
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       colorMode: {
         defaultMode: "dark",
@@ -157,7 +126,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['java', 'json','yaml'],
+        additionalLanguages: ['java', 'json','yaml','bash', 'powershell'],
       },
     }),
 };
