@@ -48,30 +48,10 @@ const config = {
       }),
     ],
   ],
-
-  plugins: [
-    // [
-    //   "@docusaurus/plugin-content-docs",
-    //   {
-    //     id: "product",
-    //     path: "product",
-    //     routeBasePath: "product",
-    //     breadcrumbs: false,
-    //   },
-    // ],
-    // [
-    //   "@docusaurus/plugin-content-docs",
-    //   {
-    //     id: "templates",
-    //     path: "templates",
-    //     routeBasePath: "templates",
-    //     breadcrumbs: false,
-    //   },
-    // ],
-  ],
+  themes: ['@saucelabs/theme-github-codeblock'],
+  plugins: [],
 
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       colorMode: {
         defaultMode: "dark",
@@ -157,7 +137,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['java', 'json','yaml'],
+        additionalLanguages: ['java', 'json','yaml','bash', 'powershell'],
       },
     }),
 };
