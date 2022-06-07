@@ -105,6 +105,44 @@ public class WebDriverTest {
 
 WebDriver Binaries provides a set of _binaries_ for Chrome, Firefox, Edge, Opera, Chromium, and Internet Explorer.
 The basic use of these binary is the following:
+```java
+WebDriverBinary.chromeDriver().setup();
+WebDriverBinary.firefoxDriver().setup();
+WebDriverBinary.ieDriver().setup();
+WebDriverBinary.edgeDriver().setup();
+WebDriverBinary.operaDriver().setup();
+```
+
+## Resolution Algorithm
+
+WebDriver Binaries executes a _resolution algorithm_ when calling to `setup()` in a given manager.
+The most relevant parts of this algorithm are the following:
+
+1. WebDriverBinary tries to find the browser version.
+To this aim, WebDriverBinary uses internally a knowledge database called commands' database.
+This database is a collection of shell commands used to discover the version of a given browser in the different operating systems (e.g., `google-chrome --version` for Chrome in Linux).
+2. Using the browser version, it tries to find the proper driver version.
+This process is different for each browser.
+In Chrome and Edge, their respective drivers (chromedriver and msedgedriver) maintainers also publish resources to identify the suitable driver version for a given major browser release.
+For instance, to find out the version of chromedriver required for Chrome 100, we need to read the following [file](https://chromedriver.storage.googleapis.com/LATEST_RELEASE_100).
+3. Once the driver version is discovered, WebDriverBinary downloads this driver to a local cache (located at `%temp%/webdrivers` by default).
+These drivers are reused in subsequent calls.
+4. Finally, WebDriverBinary exports the driver path using Java system properties (e.g., `webdriver.chrome.driver` in the case of the Chrome manager).
+
+This process automated the first two stages of the driver management previously introduced, i.e., download and setup.
+To support the third stage (i.e., maintenance), WebDriverBinary implements _resolution cache_.
+This cache (called by default `version.properties` and stored in the root of the driver cache) is a file that stores the relationship between the resolved driver and browser versions.
+This relationship is valid during a given _time-to-live_ (TTL).
+The default value for this TTL is 1 hour for browsers and drivers.
+In other words, the discovered browser version is valid for 1 hour.
+This mechanism improves the performance dramatically since the second (and following) calls to the resolution algorithm for the same browser are resolved using only local resources (i.e., without using the shell nor requesting external services).
+
+## Advanced Configuration
+
+WebDriver Binaries provides different ways of configuration.
+First, by using its _Java API_.
+To that aim, each manager (e.g., `chromeDriver()`, `firefoxDriver()`, etc., allows to concatenate different methods of this API to specify custom options or preferences.
+For example (the explanation of these methods and the other possibilities are explained in the tables at the end of this section):
 
 Description | Method
   --- | ---
