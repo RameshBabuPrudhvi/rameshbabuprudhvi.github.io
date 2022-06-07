@@ -26,7 +26,7 @@ public class WebTest {
 
     @BeforeTest
     public void beforeSuite() {
-        GridRunner.startSeleniumServer(DriverType.CHROME, DriverType.EDGE);
+        GridRunner.startSelenium(DriverType.CHROME);
     }
 
     @Test
