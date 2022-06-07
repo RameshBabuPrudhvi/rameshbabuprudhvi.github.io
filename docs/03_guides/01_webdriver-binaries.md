@@ -46,8 +46,18 @@ For instance, when a WebDriver test using Chrome faces a driver incompatibility,
 
 ## Setup
 
-WebDriver Binaries is primarily used as a Java dependency . We typically use a _build tool_ (such as [Maven](https://maven.apache.org/) or [Gradle](https://gradle.org/)) to resolve the WebDriverManager dependency. in Maven as follows (notice that it is declared using the `test` scope, since it is typically used in tests classes):
+WebDriver Binaries is primarily used as a Java dependency . We typically use a _build tool_ (such as [Maven](https://maven.apache.org/) or [Gradle](https://gradle.org/)) to resolve the WebDriver Binaries dependency. 
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  defaultValue="maven"
+  values={[
+    {label: 'Maven', value: 'maven'},
+    {label: 'Gradle', value: 'gradle'},
+  ]}>
+  <TabItem value="maven">
 ```xml
 <dependency>
     <groupId>io.github.selcukes</groupId>
@@ -56,15 +66,15 @@ WebDriver Binaries is primarily used as a Java dependency . We typically use a _
     <scope>test</scope>
 </dependency>
 ```
-
-In the case of a Gradle project, we can declare WebDriverManager as follows (again, for tests):
-
+</TabItem>
+<TabItem value="gradle">
 ```java
 dependencies {
     testImplementation("io.github.selcukes:webdriver-binaries:{project-version}")
 }
 ```
-
+</TabItem>
+</Tabs>
 ## Driver Management
 
 The primary use of WebDriver Binaries is the automation of driver management.
