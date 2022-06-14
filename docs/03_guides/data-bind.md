@@ -1,5 +1,5 @@
 ---
-id: data_bind
+id: data-bind
 title: Selcukes Databind
 sidebar_position: 2
 ---

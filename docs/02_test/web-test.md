@@ -1,4 +1,8 @@
-# Web Test
+---
+id: web-test
+title: Web Test
+sidebar_position: 1
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -59,15 +63,7 @@ public class WebTest {
     <version>0.1-SNAPSHOT</version>
     <name>Selcukes Java Examples</name>
     <properties>
-
-        <testng.version>7.5</testng.version>
-        <selenium.version>4.1.4</selenium.version>
-        <appium.version>8.0.0</appium.version>
-        <cucumber.version>7.3.4</cucumber.version>
-        <extentreports.version>5.0.9</extentreports.version>
-
-        <selcukes.version>2.0.1</selcukes.version>
-
+        <selcukes.version>2.1.0</selcukes.version>
         <lombok.version>1.18.24</lombok.version>
         <slfj4.version>2.17.2</slfj4.version>
 
@@ -77,53 +73,8 @@ public class WebTest {
     <dependencies>
         <dependency>
             <groupId>io.github.selcukes</groupId>
-            <artifactId>selcukes-core</artifactId>
+            <artifactId>selcukes-java</artifactId>
             <version>${selcukes.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.github.selcukes</groupId>
-            <artifactId>selcukes-reports</artifactId>
-            <version>${selcukes.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.github.selcukes</groupId>
-            <artifactId>selcukes-excel-runner</artifactId>
-            <version>${selcukes.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>${selenium.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-grid</artifactId>
-            <version>${selenium.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.appium</groupId>
-            <artifactId>java-client</artifactId>
-            <version>${appium.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-java</artifactId>
-            <version>${cucumber.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-testng</artifactId>
-            <version>${cucumber.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-picocontainer</artifactId>
-            <version>${cucumber.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports</artifactId>
-            <version>${extentreports.version}</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
