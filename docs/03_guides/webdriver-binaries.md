@@ -76,7 +76,7 @@ values={[
 <dependency>
     <groupId>io.github.selcukes</groupId>
     <artifactId>webdriver-binaries</artifactId>
-    <version>{project-version}</version>
+    <version>${selcukes.version}</version>
     <scope>test</scope>
 </dependency>
 ```
@@ -85,7 +85,7 @@ values={[
 
 ```java
 dependencies{
-        testImplementation("io.github.selcukes:webdriver-binaries:{project-version}")
+        testImplementation("io.github.selcukes:webdriver-binaries:${selcukes.version}")
 }
 ```
 </TabItem>

@@ -27,7 +27,7 @@ values={[
 <dependency>
     <groupId>io.github.selcukes</groupId>
     <artifactId>selcukes-databind</artifactId>
-    <version>{project-version}</version>
+    <version>${selcukes.version}</version>
 </dependency>
 ```
 </TabItem>
@@ -35,7 +35,7 @@ values={[
 
 ```java
 dependencies{
-        implementation("io.github.selcukes:selcukes-databind:{project-version}")
+        implementation("io.github.selcukes:selcukes-databind:${selcukes.version}")
 }
 ```
 </TabItem>

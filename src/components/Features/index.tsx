@@ -10,61 +10,63 @@ type Item = {
 
 const items: Item[] = [
   {
-    title: "Push to deploy",
-    link: "/product/push-to-deploy",
+    title: "Open Source",
+    link: "/",
     icon: require("@site/static/icons/setup.svg").default,
     description: (
       <>
-        Push to Github and voila - Easypanel will get your code, build it and
-        deploy it.
+        As an open source company, we're passionately engaged in numerous projects,
+         initiatives and standards where we represent the needs and requirements of our many customers and partners.
       </>
     ),
   },
   {
-    title: "Free SSL Certificates",
-    link: "/product/free-ssl-certificates",
+    title: "Test Everything",
+    link: "/",
     icon: require("@site/static/icons/Cloud-Secure.svg").default,
     description: (
       <>
-        With a simple checkbox you get auto-renewable Let's Encrypt
-        certificates.
+        Web, Mobile, Desktop, and API services..
       </>
     ),
   },
   {
-    title: "One-Click Apps",
-    link: "/product/one-click-apps",
+    title: "Unified Framework API",
+    link: "/",
     icon: require("@site/static/icons/Cursor-Click2.svg").default,
     description: (
       <>
-        Create a Wordpress website in less than 60 seconds. How does it sound?
+        All features that we provide- use the same syntax.
+        Once you learn how to write tests for the web, you can start immediately writing for mobile, desktop, or API.
       </>
     ),
   },
   {
-    title: "Zero Downtime Deployments",
-    link: "/product/zero-downtime-deployments",
-    icon: require("@site/static/icons/Error-404Window.svg").default,
+    title: "Integrations",
+    link: "/",
+    icon: require("@site/static/icons/integration.svg").default,
     description: (
-      <>You can deploy seamlessly without and intreruptions for your users.</>
+      <>Seamlessly integrate the framework with your existing tools and processes.
+      Execute tests in the clouds, distributed and publish test results in reporting solutions.</>
     ),
   },
   {
-    title: "In-Browser Terminal",
-    link: "/product/in-browser-terminal",
+    title: "Automatic waiting",
+    link: "/",
     icon: require("@site/static/icons/Approved-Window.svg").default,
     description: (
-      <>Check logs or run sell commands without leaving your browser.</>
+      <>Never add waits or sleeps to your tests.
+      Selcukes automatically waits for commands and assertions before moving on. No more async hell.</>
     ),
   },
   {
-    title: "Dockerfile not required",
-    link: "/product/dockerfile-not-required",
-    icon: require("@site/static/icons/Factory2.svg").default,
+    title: "Debug",
+    link: "/",
+    icon: require("@site/static/icons/debug.svg").default,
     description: (
       <>
-        Transform your code into Docker images with the magic of Cloud Native
-        Buildpacks.
+        Stop guessing why your tests are failing.
+        Our readable errors and stack traces make debugging lightning fast..
       </>
     ),
   },
